@@ -5,7 +5,7 @@ int encode(int red, int green, int blue) {
     int color = 0;
     color = (red<<16) | (green<<8) | blue;
     return color;
-}
+}//nvnv
 
 int main(int argc, char *argv[]) {
     if (argc != 4) {
