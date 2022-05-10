@@ -22,13 +22,13 @@ int main(int argc, char *argv[]) {
 
            for(int c = 3; c < argc; c++) {
             temp_c = atof(argv[c]) - 273.5;
-            printf("%2f celsius",temp_c);
+            printf("%0.2f celsius\n",temp_c);
            }
         }
         else if( 0 == strcmp(argv[1], F[1]) || 0 == strcmp(argv[1], F[2]) || 0 == strcmp(argv[1], F[3]) || 0 == strcmp(argv[1], F[4]) || (argv[1][1]) == 'F') {
             for(int c = 3; c < argc; c++) {
             temp_c = (atof(argv[c])-32)*(5)/9;
-            printf("%2f celsius", temp_c);
+            printf("%0.2f \n", temp_c);
             }
         }
     }
@@ -36,13 +36,13 @@ int main(int argc, char *argv[]) {
         if(0 == strcmp(argv[1], K[0]) || 0 == strcmp(argv[1], K[1]) || 0 == strcmp(argv[1], K[2]) || 0 == strcmp(argv[1], K[3])) {
            for(int f = 3; f < argc; f++) {
             temp_f = 1.8*(atof(argv[f]) - 273.5)+ 32;
-            printf("%f fahrenheit", temp_f);
+            printf("%0.2f \n", temp_f);
            }
         }
         else if( 0 == strcmp(argv[1], C[1]) || 0 == strcmp(argv[1], C[2]) || 0 == strcmp(argv[1], C[3]) || 0 == strcmp(argv[1], C[4]) || (argv[1][1]) == 'C') {
            for(int f = 3; f < argc; f++) {
             temp_f = 1.8*atof(argv[f]) + 32;
-            printf("%f fahrenheit", temp_f);
+            printf("%0.2f \n", temp_f);
            }
         }
     }
@@ -50,13 +50,13 @@ int main(int argc, char *argv[]) {
         if(0 == strcmp(argv[1], F[1]) || 0 == strcmp(argv[1], F[2]) || 0 == strcmp(argv[1], F[3]) || 0 == strcmp(argv[1], F[4]) || (argv[1][1]) == 'F'){
             for(int k = 3; k < argc; k++) {
             temp_k = (0.5555)*(atof(argv[k]) - 32) + 273.5;
-            printf("%f kelvin", temp_k);
+            printf("%0.2f \n", temp_k);
             }
         }
         else if( 0 == strcmp(argv[1], C[1]) || 0 == strcmp(argv[1], C[2]) || 0 == strcmp(argv[1], C[3]) || 0 == strcmp(argv[1], C[4]) || (argv[1][1]) == 'C') {
            for(int k = 3; k < argc; k++) {
             temp_k = atof(argv[k]) + 273.5;
-            printf("%f kelvin", temp_k);
+            printf("%0.2f \n", temp_k);
            }
         }
     }
