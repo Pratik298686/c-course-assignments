@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
 
            for(int c = 3; c < argc; c++) {
             temp_c = atof(argv[c]) - 273.5;
-            printf("%0.2f celsius\n",temp_c);
+            printf("%0.2f \n",temp_c);
            }
         }
         else if( 0 == strcmp(argv[1], F[1]) || 0 == strcmp(argv[1], F[2]) || 0 == strcmp(argv[1], F[3]) || 0 == strcmp(argv[1], F[4]) || (argv[1][1]) == 'F') {
